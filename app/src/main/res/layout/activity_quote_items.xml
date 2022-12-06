@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuoteDetailsActivity.QuoteItemsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="#FFFFFF"
+
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/quoteBackButton"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/backkey2"/>
+
+            <TextView
+                android:id="@+id/quoteTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/latoblack"
+                android:layout_gravity="center"
+                android:layout_marginBottom="1dp"
+                android:text="Quote Details"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13sdp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:gravity="end">
+
+                <ImageView
+                    android:id="@+id/addQuote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/add_quote_img_btn" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/quoteDetailsLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="@color/black"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Customer Name : "/>
+                <TextView
+                    android:id="@+id/customerNameQuote"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="Customer Name"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_regular"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_weight="1.2"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="Customer Contact no :"/>
+                <TextView
+                    android:id="@+id/customerNoQuote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/lato_bold"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="8374927493"/>
+
+                <TextView
+                    android:id="@+id/dateOnQuote"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lato_bold"
+                    android:layout_gravity="end"
+                    android:gravity="end"
+                    android:layout_marginEnd="@dimen/_5sdp"
+                    android:layout_weight="0.7"
+                    android:textSize="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:text="12-12-12"/>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#D3D3D3"/>
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.7"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="@dimen/_12sdp"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="Name"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:gravity="center"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/lato_bold"
+                android:text="Gst"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:fontFamily="@font/lato_bold"
+                android:textSize="@dimen/_12sdp"
+                android:gravity="center_horizontal"
+                android:text="Qty"/>
+            <TextView
+                android:id="@+id/deleted"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="end"
+                android:textSize="@dimen/_12sdp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginEnd="@dimen/_5sdp"
+                android:text="Rate"/>
+
+        </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#D3D3D3"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/quoteRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <View
+                android:id="@+id/view"
+                android:layout_below="@+id/quoteRecyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:background="#D3D3D3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/quoteRecyclerview"
+                android:layout_gravity="end"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Sub Total"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/subTotalAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="555"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:fontFamily="@font/lato_regular"
+                        android:text="Total GST Amt"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/totalGstAmt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/lato_bold"
+                        android:text="555"
+                        android:textSize="@dimen/_12sdp" />
+
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:background="#D3D3D3" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_2sdp"
+                    android:layout_marginBottom="@dimen/_2sdp"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:fontFamily="@font/latoblack"
+                        android:text="Grand Total"
+                        android:textSize="@dimen/_12sdp" />
+
+                    <TextView
+                        android:id="@+id/grandTotal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_10sdp"
+                        android:fontFamily="@font/latoblack"
+                        android:text="555"
+                        android:textSize="@dimen/_12sdp" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_1sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/black" />
+            </LinearLayout>
+        </RelativeLayout>
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/sharePDF"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Share"
+                android:textSize="@dimen/_18sdp"
+                app:cornerRadius="@dimen/_10sdp"
+                android:backgroundTint="@color/Blue"
+                android:layout_margin="@dimen/_10sdp"/>
+
+        </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
