@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "400519869231",
+    "project_id": "simple-qr-code-app",
+    "storage_bucket": "simple-qr-code-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:400519869231:android:0069a0670319879d3867da",
+        "android_client_info": {
+          "package_name": "com.simple.simpleqrcode"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "400519869231-gj9l4kg4lvg032a9doehdduu7hsmehkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAS5uxOVApsK39UD2Oa2eQrtPR2V-Bgh_w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "400519869231-gj9l4kg4lvg032a9doehdduu7hsmehkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
